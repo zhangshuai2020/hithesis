@@ -11,24 +11,25 @@
   % 秘级
   %=====
   statesecrets={公开},
-  natclassifiedindex={TM301.2},
-  intclassifiedindex={62-5},
+  natclassifiedindex={V448.2},
+  intclassifiedindex={629.133.4},
   %
   %=========
   % 中文信息
   %=========
   ctitleone={局部多孔质气体静压},%本科生封面使用
   ctitletwo={轴承关键技术的研究},%本科生封面使用
-  ctitlecover={局部多孔质气体静压轴承关键技术的研究},%放在封面中使用，自由断行
-  ctitle={局部多孔质气体静压轴承关键技术的研究},%放在原创性声明中使用
-  csubtitle={一条副标题}, %一般情况没有，可以注释掉
+  ctitlecover={大椭圆轨道交会轨迹预测、鲁棒规划与制导
+},%放在封面中使用，自由断行
+  ctitle={大椭圆轨道交会轨迹预测、鲁棒规划与制导},%放在原创性声明中使用
+%  csubtitle={一条副标题}, %一般情况没有，可以注释掉
   cxueke={工学},
-  csubject={机械制造及其自动化},
-  caffil={机电工程学院},
-  cauthor={于冬梅},
-  csupervisor={某某某教授},
-  cassosupervisor={某某某教授}, % 副指导老师
-  ccosupervisor={某某某教授}, % 联合指导老师
+  csubject={航空宇航科学与技术},
+  caffil={航天学院},
+  cauthor={张帅},
+  csupervisor={荆武兴教授},
+%  cassosupervisor={某某某教授}, % 副指导老师
+%  ccosupervisor={某某某教授}, % 联合指导老师
   % 如果是第一封面的日期要手动设置，需要取消注释下一行，并将内容改为“规范”中要求的封面第一页最下方的日期
   % firstpagecdate={2022年6月},
   % 日期自动使用当前时间，若需指定按如下方式修改：
@@ -48,33 +49,34 @@
   %=========
   % 英文信息
   %=========
-  etitle={Research on key technologies of partial porous externally pressurized gas bearing},
-  esubtitle={This is the sub title},
+  etitle={RENDEZVOUS IN HIGH-ECCENTRICITY ELLIPTICAL ORBITS:
+TRAJECTORY PREDICTION, ROBUST OPTIMISATION AND GUIDANCE},
+  %esubtitle={This is the sub title},
   exueke={Engineering},
-  esubject={Computer Science and Technology},
-  eaffil={\emultiline[t]{School of Mechatronics Engineering \\ Mechatronics Engineering}},
-  eauthor={Yu Dongmei},
-  esupervisor={Professor XXX},
-  eassosupervisor={XXX},
+  esubject={Aerospace Science and Technology},
+  eaffil={\emultiline[t]{School of Aeronautics}},
+  eauthor={Zhang Shuai},
+  esupervisor={Professor Jing Wuxing},
+%  eassosupervisor={XXX},
   % 日期自动生成，若需指定按如下方式修改：
-  edate={December, 2017},
-  estudenttype={Master of Art},
+  edate={June, 2026},
+%  estudenttype={Master of Art},
   %
   % 关键词用“英文逗号”分割
-  ckeywords={\TeX, \LaTeX, CJK, 嗨！, thesis},
-  ekeywords={\TeX, \LaTeX, CJK, template, thesis},
+  ckeywords={大椭圆轨道, 轨迹预测, 轨迹规划, 鲁棒优化,制导},
+  ekeywords={highly-elliptical orbit, trajectory prediction, trajectory programming, robust optimization, guidance},
 }
 
 \begin{cabstract}
 
-摘要的字数（以汉字计），硕士学位论文一般为500 $\sim$ 1000字，博士学位论文为1000 $\sim$ 2000字，
-均以能将规定内容阐述清楚为原则，文字要精练，段落衔接要流畅。摘要页不需写出论文题目。
-英文摘要与中文摘要的内容应完全一致，在语法、用词上应准确无误，语言简练通顺。
-留学生的英文版博士学位论文中应有不少于3000字的“详细中文摘要”。
+大椭圆轨道是部署预警卫星、通信卫星、成像侦察卫星和电子侦察卫星以及在轨服务卫星等高价值卫星的首选轨道，也是登月等深空探测飞行器、同步轨道飞行器发射故障的大概率中间停留轨道。由于动力学复杂、摄动因素多，其动力学存在诸多不确定性。考虑不确定性的预测、规划、自主控制是关键科学问题。提取载人登月、同步转移、闪电轨道、火星大椭圆轨道几个关键应用场景。
+针对大椭圆轨道预测问题，根据轨道动力学资料建立轨道动力学模型，考虑非球形引力、大气阻力、太阳光压、三体引力等。特别的，考虑田谐项摄动引起的共振效应，获得了共振轨道和非共振轨道近似解析解、半解析解和参数化解，综合比较了各解性能和适用情况，针对滤波等需求分别给出了各个解的不确定性传播形式，即均值和协方差传播特征。
+在预测结果的支持下，对大椭圆轨道的估计
+针对大椭圆轨道规划问题，考虑不确定性，建立了随机动力学模型。在随机动力学模型约束下，给出了概率约束规划结果。【两个建模过程不可以合到一起吗】随机约束规划解在不同场景下考虑了各种不同的实际约束。随机动力学打靶仿真验证了规划结果的可靠性。
+针对交会制导问题，考虑传感器和执行机构特性，设计了交会探测制导方法。
+推力大小是一个关键因素，从脉冲到小推力的规划与控制结果会显得截然不同。利用脉冲结果猜测小推力初值。
+针对两类执行机构设计了执行机构分配算法，考虑执行机构偏差的打靶仿真对算法性能有一个很好的支撑。
 
-  关键词是为了文献标引工作、用以表示全文主要内容信息的单词或术语。关键词不超过 5
-  个，每个关键词中间用分号分隔。（模板作者注：关键词分隔符不用考虑，模板会自动处
-  理。英文关键词同理。）
 \end{cabstract}
 
 \begin{eabstract}
